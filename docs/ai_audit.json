@@ -1,0 +1,150 @@
+{
+  "rows": 270,
+  "countries": 30,
+  "years": 9,
+  "year_start": 2016,
+  "year_end": 2024,
+  "country_codes": [
+    "AUS",
+    "AUT",
+    "BEL",
+    "CAN",
+    "CHE",
+    "CHN",
+    "DEU",
+    "DNK",
+    "ESP",
+    "FIN",
+    "FRA",
+    "GBR",
+    "GRC",
+    "HUN",
+    "IND",
+    "ISR",
+    "ITA",
+    "JPN",
+    "KOR",
+    "LUX",
+    "MEX",
+    "NLD",
+    "NOR",
+    "POL",
+    "PRT",
+    "ROU",
+    "SWE",
+    "TUR",
+    "USA",
+    "ZAF"
+  ],
+  "panel_obs_counts": {
+    "AUS": 9,
+    "AUT": 9,
+    "BEL": 9,
+    "CAN": 9,
+    "CHE": 9,
+    "CHN": 9,
+    "DEU": 9,
+    "DNK": 9,
+    "ESP": 9,
+    "FIN": 9,
+    "FRA": 9,
+    "GBR": 9,
+    "GRC": 9,
+    "HUN": 9,
+    "IND": 9,
+    "ISR": 9,
+    "ITA": 9,
+    "JPN": 9,
+    "KOR": 9,
+    "LUX": 9,
+    "MEX": 9,
+    "NLD": 9,
+    "NOR": 9,
+    "POL": 9,
+    "PRT": 9,
+    "ROU": 9,
+    "SWE": 9,
+    "TUR": 9,
+    "USA": 9,
+    "ZAF": 9
+  },
+  "balanced": true,
+  "missing": {
+    "ISO3": 0,
+    "Year": 0,
+    "AI_Investment": 0,
+    "AI_Patents": 0,
+    "HighTech_Exports": 0,
+    "GDP_Growth": 0,
+    "Unemployment": 0
+  },
+  "zero": {
+    "Year": 0,
+    "AI_Investment": 5,
+    "AI_Patents": 0,
+    "HighTech_Exports": 0,
+    "GDP_Growth": 0,
+    "Unemployment": 0
+  },
+  "negative": {
+    "Year": 0,
+    "AI_Investment": 0,
+    "AI_Patents": 0,
+    "HighTech_Exports": 0,
+    "GDP_Growth": 41,
+    "Unemployment": 0
+  },
+  "high_corr_pairs": [
+    [
+      "HighTech_Exports",
+      "Unemployment",
+      -0.481
+    ],
+    [
+      "AI_Patents",
+      "HighTech_Exports",
+      0.268
+    ],
+    [
+      "AI_Investment",
+      "AI_Patents",
+      0.165
+    ],
+    [
+      "AI_Investment",
+      "HighTech_Exports",
+      0.155
+    ],
+    [
+      "AI_Patents",
+      "GDP_Growth",
+      0.128
+    ],
+    [
+      "AI_Investment",
+      "Unemployment",
+      -0.098
+    ],
+    [
+      "GDP_Growth",
+      "Unemployment",
+      -0.089
+    ],
+    [
+      "AI_Patents",
+      "Unemployment",
+      -0.088
+    ],
+    [
+      "AI_Investment",
+      "GDP_Growth",
+      0.046
+    ],
+    [
+      "HighTech_Exports",
+      "GDP_Growth",
+      0.024
+    ]
+  ],
+  "csv_kb": 15.5
+}
