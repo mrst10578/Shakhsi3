@@ -37,3 +37,7 @@ do stata/02_estimate.do ai
 **Source mapping:** World Bank WDI and CSET are described in the supplied dictionaries, but the downloaded sheets were not individually reconciled with original time-series feeds. These are *provided research data*, not independently verified WDI/CSET extracts.
 
 Independent Linear project: [Shakhsi3 | Independent Panel GMM Studies](https://linear.app/zhstt13/project/shakhsi3-independent-panel-gmm-studies-6c60554e43c7).
+
+### Preliminary local diagnostics (not Stata results)
+
+`python tests/run_exploratory_preflight.py` writes `docs/exploratory_preflight.json`; `docs/PRELIMINARY_FINDINGS_FA.md` explains the results and caveats. Pooled VIFs: digital Internet 4.039 / Broadband 4.763, AI ln1p investment 1.578 / ln1p patents 1.572. **26 of 30 countries show lower AI patent counts in 2024 vs 2023**, requiring source-vintage verification and robustness excluding 2024. Country-specific ADF checks are **not** panel IPS and are not a license to report a final GMM estimate. 
