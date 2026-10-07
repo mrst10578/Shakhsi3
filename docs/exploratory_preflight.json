@@ -1,0 +1,215 @@
+{
+  "digital": {
+    "type": "Exploratory (Python). Not official Stata IPS, Hansen or Arellano-Bond diagnostics.",
+    "regressors": [
+      "Internet",
+      "Broadband",
+      "ICT_Exports",
+      "Unemployment",
+      "Inflation",
+      "RnD"
+    ],
+    "pooled_VIF": {
+      "Internet": 4.039,
+      "Broadband": 4.763,
+      "ICT_Exports": 1.231,
+      "Unemployment": 1.095,
+      "Inflation": 1.223,
+      "RnD": 1.827
+    },
+    "two_way_within_VIF": {
+      "Internet": 1.084,
+      "Broadband": 1.079,
+      "ICT_Exports": 1.07,
+      "Unemployment": 1.028,
+      "Inflation": 1.015,
+      "RnD": 1.111
+    },
+    "correlation_matrix": [
+      [
+        1.0,
+        0.8645,
+        0.2712,
+        -0.1932,
+        -0.3102,
+        0.5378
+      ],
+      [
+        0.8645,
+        1.0,
+        0.2429,
+        -0.2448,
+        -0.3823,
+        0.6035
+      ],
+      [
+        0.2712,
+        0.2429,
+        1.0,
+        -0.0147,
+        -0.1359,
+        0.4159
+      ],
+      [
+        -0.1932,
+        -0.2448,
+        -0.0147,
+        1.0,
+        -0.0352,
+        -0.1716
+      ],
+      [
+        -0.3102,
+        -0.3823,
+        -0.1359,
+        -0.0352,
+        1.0,
+        -0.3288
+      ],
+      [
+        0.5378,
+        0.6035,
+        0.4159,
+        -0.1716,
+        -0.3288,
+        1.0
+      ]
+    ],
+    "country_level_ADF_lag1": {
+      "Growth": {
+        "n_tested": 47,
+        "n_skipped": 0,
+        "fraction_p_lt_0_05": 0.6596,
+        "median_individual_p": 0.0297,
+        "warning": "Country ADF tests are NOT an IPS estimate. Do not pool individual p values as if independent across countries."
+      },
+      "ln_Productivity": {
+        "n_tested": 47,
+        "n_skipped": 0,
+        "fraction_p_lt_0_05": 0.0426,
+        "median_individual_p": 0.7504,
+        "warning": "Country ADF tests are NOT an IPS estimate. Do not pool individual p values as if independent across countries."
+      },
+      "Internet": {
+        "n_tested": 47,
+        "n_skipped": 0,
+        "fraction_p_lt_0_05": 0.2128,
+        "median_individual_p": 0.4213,
+        "warning": "Country ADF tests are NOT an IPS estimate. Do not pool individual p values as if independent across countries."
+      },
+      "Broadband": {
+        "n_tested": 47,
+        "n_skipped": 0,
+        "fraction_p_lt_0_05": 0.1702,
+        "median_individual_p": 0.4284,
+        "warning": "Country ADF tests are NOT an IPS estimate. Do not pool individual p values as if independent across countries."
+      },
+      "ICT_Exports": {
+        "n_tested": 47,
+        "n_skipped": 0,
+        "fraction_p_lt_0_05": 0.1489,
+        "median_individual_p": 0.7078,
+        "warning": "Country ADF tests are NOT an IPS estimate. Do not pool individual p values as if independent across countries."
+      },
+      "Unemployment": {
+        "n_tested": 47,
+        "n_skipped": 0,
+        "fraction_p_lt_0_05": 0.1915,
+        "median_individual_p": 0.3072,
+        "warning": "Country ADF tests are NOT an IPS estimate. Do not pool individual p values as if independent across countries."
+      },
+      "Inflation": {
+        "n_tested": 47,
+        "n_skipped": 0,
+        "fraction_p_lt_0_05": 0.1064,
+        "median_individual_p": 0.3521,
+        "warning": "Country ADF tests are NOT an IPS estimate. Do not pool individual p values as if independent across countries."
+      },
+      "RnD": {
+        "n_tested": 47,
+        "n_skipped": 0,
+        "fraction_p_lt_0_05": 0.1064,
+        "median_individual_p": 0.4655,
+        "warning": "Country ADF tests are NOT an IPS estimate. Do not pool individual p values as if independent across countries."
+      }
+    }
+  },
+  "ai": {
+    "type": "Exploratory (Python). Not official Stata IPS, Hansen or Arellano-Bond diagnostics.",
+    "regressors": [
+      "ln1p_AI_Investment",
+      "ln1p_AI_Patents",
+      "GDP_Growth"
+    ],
+    "pooled_VIF": {
+      "ln1p_AI_Investment": 1.578,
+      "ln1p_AI_Patents": 1.572,
+      "GDP_Growth": 1.005
+    },
+    "two_way_within_VIF": {
+      "ln1p_AI_Investment": 1.005,
+      "ln1p_AI_Patents": 1.009,
+      "GDP_Growth": 1.011
+    },
+    "correlation_matrix": [
+      [
+        1.0,
+        0.6031,
+        0.0678
+      ],
+      [
+        0.6031,
+        1.0,
+        0.0285
+      ],
+      [
+        0.0678,
+        0.0285,
+        1.0
+      ]
+    ],
+    "country_level_ADF_lag1": {
+      "HighTech_Exports": {
+        "n_tested": 30,
+        "n_skipped": 0,
+        "fraction_p_lt_0_05": 0.1,
+        "median_individual_p": 0.8391,
+        "warning": "Country ADF tests are NOT an IPS estimate. Do not pool individual p values as if independent across countries."
+      },
+      "Unemployment": {
+        "n_tested": 30,
+        "n_skipped": 0,
+        "fraction_p_lt_0_05": 0.3333,
+        "median_individual_p": 0.1355,
+        "warning": "Country ADF tests are NOT an IPS estimate. Do not pool individual p values as if independent across countries."
+      },
+      "ln1p_AI_Investment": {
+        "n_tested": 30,
+        "n_skipped": 0,
+        "fraction_p_lt_0_05": 0.1667,
+        "median_individual_p": 0.5548,
+        "warning": "Country ADF tests are NOT an IPS estimate. Do not pool individual p values as if independent across countries."
+      },
+      "ln1p_AI_Patents": {
+        "n_tested": 30,
+        "n_skipped": 0,
+        "fraction_p_lt_0_05": 0.0667,
+        "median_individual_p": 0.5915,
+        "warning": "Country ADF tests are NOT an IPS estimate. Do not pool individual p values as if independent across countries."
+      },
+      "GDP_Growth": {
+        "n_tested": 30,
+        "n_skipped": 0,
+        "fraction_p_lt_0_05": 0.2333,
+        "median_individual_p": 0.1336,
+        "warning": "Country ADF tests are NOT an IPS estimate. Do not pool individual p values as if independent across countries."
+      }
+    },
+    "patent_2024_to_2023_ratios": {
+      "median": 0.5688,
+      "fell": 26,
+      "n": 30,
+      "caution": "2024 patent application counts may be affected by reporting lag; verify source coverage and vintage."
+    }
+  }
+}
